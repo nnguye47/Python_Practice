@@ -11,3 +11,9 @@ example_2 = [True, False, False, True, False, True, False, True]
 
 bits = [1 if bool == True else 0 for bool in example_2]
 print(bits)
+
+my_string = "HelloMyNameIsNam"
+my_string = "".join(
+    [i if i.islower() else " " + i for i in my_string]
+)[1:]
+print(my_string)
